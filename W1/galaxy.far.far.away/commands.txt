@@ -1,0 +1,160 @@
+Terminal Lab
+
+    Part I
+
+1. 
+-   stanleyescobar@Stanleys-Air software-classwork % mkdir galaxy-far-far-away
+-   stanleyescobar@Stanleys-Air software-classwork % cd galaxy-far-far-away 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % touch commands.txt
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mkdir death_star
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % ls
+-   commands.txt	death_star
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % touch darth_vader.txt && touch princess_leia.txt 
+-   stanleyescobar@Stanleys-Air death_star % ls
+-   darth_vader.txt		princess_leia.txt
+-   stanleyescobar@Stanleys-Air death_star % touch storm_trooper.txt
+-   stanleyescobar@Stanleys-Air death_star % ls
+-   darth_vader.txt		princess_leia.txt	storm_trooper.txt
+
+2. 
+-   stanleyescobar@Stanleys-Air death_star % cd ..  
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mkdir tatooine
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % ls
+-   commands.txt	death_star	tatooine
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd tatooine 
+-   stanleyescobar@Stanleys-Air tatooine % touch luke.txt && touch ben_kenobi.txt
+-   stanleyescobar@Stanleys-Air tatooine % ls
+-   ben_kenobi.txt	luke.txt
+
+3.
+-   stanleyescobar@Stanleys-Air tatooine % mkdir millenium_falcon
+-   stanleyescobar@Stanleys-Air tatooine % cd millenium_falcon 
+-   stanleyescobar@Stanleys-Air millenium_falcon % touch han_solo.txt && touch chewbaca.txt
+-   stanleyescobar@Stanleys-Air millenium_falcon % ls
+-   chewbaca.txt	han_solo.txt
+
+   
+    Part II
+
+4.stanleyescobar@Stanleys-Air millenium_falcon % cd ..
+stanleyescobar@Stanleys-Air tatooine % ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+stanleyescobar@Stanleys-Air tatooine % mv ben_kenobi.txt obi_wan.txt
+stanleyescobar@Stanleys-Air tatooine % ls
+luke.txt		millenium_falcon	obi_wan.txt
+
+    Part III
+
+5. 
+-   stanleyescobar@Stanleys-Air tatooine % cd .. 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % cp storm_trooper.txt ../tatooine
+-   stanleyescobar@Stanleys-Air death_star % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd tatooine 
+-   stanleyescobar@Stanleys-Air tatooine % ls
+    luke.txt		    obi_wan.txt
+    millenium_falcon	storm_trooper.txt
+
+    Part IV
+
+6. 
+-   stanleyescobar@Stanleys-Air tatooine % mv luke.txt obi_wan.txt  millenium_falcon 
+-   stanleyescobar@Stanleys-Air tatooine % cd millenium_falcon 
+-   stanleyescobar@Stanleys-Air millenium_falcon % ls
+    chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+
+7.
+-   stanleyescobar@Stanleys-Air death_star % cd ..
+-   stanleyescobar@Stanleys-Air tatooine % mv millenium_falcon ..
+-   stanleyescobar@Stanleys-Air tatooine % ls
+    storm_trooper.txt
+
+8.
+-   stanleyescobar@Stanleys-Air tatooine % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mv           millenium_falcon death_star 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % ls
+commands.txt	death_star	tatooine
+
+9.
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % mv princess_leia.txt   millenium_falcon 
+-   stanleyescobar@Stanleys-Air death_star %
+
+    Part V 
+10. 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % mv princess_leia.txt millenium_falcon 
+-   stanleyescobar@Stanleys-Air death_star % cd millenium_falcon 
+-   stanleyescobar@Stanleys-Air millenium_falcon % rm obi_wan.txt
+
+    Part VI
+1.
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mkdir yavin_4
+
+2. 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % mv millenium_falcon ..
+-   stanleyescobar@Stanleys-Air death_star % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % ls
+commands.txt		millenium_falcon	yavin_4
+death_star		tatooine
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mv millenium_falcon yavin_4 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd yavin_4 
+-   stanleyescobar@Stanleys-Air yavin_4 % ls
+millenium_falcon
+
+3. 
+-   stanleyescobar@Stanleys-Air yavin_4 % mkdir x_wing
+
+4.
+-   stanleyescobar@Stanleys-Air yavin_4 % cd millenium_falcon 
+-   stanleyescobar@Stanleys-Air millenium_falcon % mv princess_leia.txt ..
+
+5.
+-   stanleyescobar@Stanleys-Air millenium_falcon % cd ..
+-   stanleyescobar@Stanleys-Air yavin_4 % cd x_wing 
+-   stanleyescobar@Stanleys-Air x_wing % cd ..
+-   stanleyescobar@Stanleys-Air yavin_4 % mv x_wing ..
+-   stanleyescobar@Stanleys-Air yavin_4 % mv millenium_falcon ..
+
+6.
+-   stanleyescobar@Stanleys-Air yavin_4 % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd death_star 
+-   stanleyescobar@Stanleys-Air death_star % mkdir tie_fighter_1
+-   stanleyescobar@Stanleys-Air death_star % mkdir tie_fighter_2
+-   stanleyescobar@Stanleys-Air death_star % mkdir tie_fighter_3
+
+7.
+-   stanleyescobar@Stanleys-Air death_star % mv darth_vader.txt tie_fighter_1
+
+8.
+-   stanleyescobar@Stanleys-Air death_star % cp storm_trooper.txt tie_fighter_2
+-   stanleyescobar@Stanleys-Air death_star % cp storm_trooper.txt tie_fighter_3
+
+9.
+-   stanleyescobar@Stanleys-Air death_star % mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ..
+
+    Part VII
+20.
+-   stanleyescobar@Stanleys-Air death_star % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % rm -r tie_fighter_2 tie_fighter_3
+
+    Part VIII
+21.
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % cd x_wing 
+-   stanleyescobar@Stanleys-Air x_wing % touch the_force.txt
+
+22.
+-   stanleyescobar@Stanleys-Air x_wing % cd ..
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % rm -r death_star
+
+23.
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mv x_wing yavin_4 
+-   stanleyescobar@Stanleys-Air galaxy-far-far-away % mv millenium_falcon yavin_4
+
+
+
+
+
+
