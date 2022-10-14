@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Stanley Escobar">
+    <meta name="description" content="This page contains everything I am learning in my Pre Work">
+    <title>Stanley Escobar</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <div id="div1">
+        <h2>Stanley Escobar</h2>
+        <h3>Welcome to My First Web Page!</h3>
+        <nav>
+            <ul>
+                <li><a href="stories.html">stories</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div2">
+        <p id="stanInfo">
+            Hey, Im Stanley Escobar you can call me Stan for short. I'm really exicted
+            to be apart of this program, a little nervous also. My parents both are
+            from El Salvador, I grew up in the US my whole life but I'm still a proud
+            Salvadorean. I've been practicing programming alot over the last 2 months.
+            I'm delighted that Per Scholas is going to be a major part of my coding
+            journey.
+        </p>
+    </div>
+    <div id="div3">
+        <hr>
+        <img src="images/Nebula.webp" alt="Nebula" title="Nebula" width="300" height="280" />
+        <br />
+        <a href="https://unsplash.com/photos/rTZW4f02zY8">Link to Image</a>
+
+        <p>I chose an Image of a Nebula to represent me, because I enjoy space.</p>
+        <hr>
+        <br />
+    </div>
+    <div id="div4">
+        <h2>Likes and Dislikes</h2>
+        <p>Things I Like to do</p>
+        <ul id="stanlikes">
+            <li class="favlist">Play Basketball</li>
+            <li class="favlist">Go to the Beach</li>
+            <li>Work Out</li>
+            <li>Spend Time with Family</li>
+        </ul>
+        <br>
+        <p id="stanDislikes">3 Things I Dont Like</p>
+        <ol>
+            <li>Cold weather</li>
+            <li>Mosquitoes</li>
+            <li>Prunes</li>
+        </ol>
+        <hr />
+    </div>
+    <div id="div5">
+        <h3>My Daily Schedule</h3>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <time datetime="04:00">4am</time>-<time datetime="08:00">8am</time>
+                    </td>
+                    <td>Breakfast & Workout</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="08:00">8am</time>-<time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="13:00">1pm</time>
+                    </td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="13:00">1pm</time>-<time datetime="17:00">5pm</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="17:00">5pm</time>-<time datetime="20:00">8pm</time>
+                    </td>
+                    <td>Family Time & Dinner</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="20:00">8pm</time>-<time datetime="04:00">4am</time>
+                    </td>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+    <div id="div6">
+        <br>
+        <h3>Music</h3>
+        <p>I like listening to this style of music while I study</p>
+
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/N4o0qnSeVQQ" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div id="div7">
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required
+                        autofocus />
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Smith" autocomplete="on" required />
+                </p>
+                <p>
+                    <label for="class">Class:</label>
+                    <input type="text" name="class" id="class" placeholder="Software Engineering" required />
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required />
+                </p>
+                <p>
+                    <input type="radio" name="gender" value="Female">
+                    Female <br>
+                    <input type="radio" name="gender" value="Male">
+                    Male <br>
+                </p>
+                <button id="button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
