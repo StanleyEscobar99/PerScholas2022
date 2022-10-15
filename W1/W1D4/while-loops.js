@@ -1,6 +1,70 @@
-//While Loops
-
+//===========================While Loops===========================
 // a = a + 2 or  a+=2  -how to add any number
+
+//As long as the condition is true, code is executed. When break statement is encountered
+// inside a loop, the loop is immediately exited and the program continues with the
+// statement immediately following the loop.
+
+// when the computer reaches the while statement, it tests to see if the boolean expression is 
+// true. If true, it jumps into the block of code immediately below the while statement.
+//when the computer reaches the last line in the while loops block of code, it jumps back up 
+// to the while statement. It retest the boolean expression. If still true, 
+// it enters the block of code again.
+
+//When the boolean expression becomes false, the computer skips the while statement and 
+//continues with the remainder of the program.
+
+
+// The following is an example of a while loop that iterates a series of 
+//numbers as long as it is less than 10. It is adding +2 to the var a after every iteration
+
+// a = 1
+// while (a < 10){
+//     console.log(a)
+//     a +=2
+// }
+
+
+// The following is an example of a While loop that iterates a series of numbers
+//  as long as it is less than 7. It is also running an if statement to check 
+//  if the var a if divisible by 2 with no remainder and printing it with a string “ is even” else “is odd”
+
+
+// a = 1
+
+// while (a < 7) {
+//     if(a % 2 == 0){
+//         console.log(a + " is even")
+//     } else {
+//         console.log(a + " is odd")      
+//     } a+= 1
+// }
+
+
+
+//=====While Loop- Example
+// Use loops when you need to run the same code as long as a condition is true
+// Write a while loop to count down to 0
+// Starting anywhere between 5 and 10
+// What would be the condition the count down needs to be true?
+// Number greater than 10?
+// Number less than 10?
+// Number greater than 0?
+// What do you think?
+
+// let num = 1
+
+// while (num >= 0) {
+//     console.log(num + " is greater than or equal to 0 ")
+//     num--
+// }
+
+
+
+//===================Exercise==================
+
+//Exercise 
+//1.
 
 // let age = 1
 
@@ -11,27 +75,9 @@
 // }
 
 
-// let a = 1
-
-// while (a < 7) {
-//     if ( a % 2 === 0) {
-//         console.log(a + " is even")
-//     } else {
-//         console.log(a + " is odd")
-//     }
-//     a++
-// }
-
-// Exercise:
-
-// let num = 10
-
-// while (num >= 0) {
-//     console.log(num + " is greater than or equal to 0 ")
-//     num--
-// }
-
 //2.
+// Keep printing integers in multiples of 3 as long as 
+//integers are less than 35 using a while loop
 
 // let c = 3
 
@@ -43,6 +89,8 @@
 // }
 
 //3.
+//Keep printing integers in multiples of 5 as long as integers are less than 100
+
 
 // let d = 1
 
@@ -54,6 +102,9 @@
 // }
 
 //4.
+//Using a while loop print integers between 0 and 20. 
+//All numbers divisible by 2 should be multiplied by 3 
+//before they are output. All other integers should not be output.
 
 // let e = 1
 
@@ -288,11 +339,6 @@
 //     grade
 // }
 
-// Practice coding here
-// hackerrank
-// v Code
-// code Wars
-// solo learn
 
 // function greaterNum(num1, num2) {
 //   if (num1 > num2) {

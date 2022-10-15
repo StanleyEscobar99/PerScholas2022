@@ -21,7 +21,6 @@ img{
     margin: 0 auto;
 }
 footer{
-    color: #37556b;
     background-color: white;
     margin-bottom: 10px;
 }
@@ -43,11 +42,11 @@ p{
     text-align: left;
 }
 h1{
-    color: black;
+    color: #37556b;
     margin-top: 10px;
 }
 h2{
-    color: black;
+    color: #37556b;
     /* margin: 20px auto; */
     padding: 20px;
 }
@@ -61,4 +60,3 @@ h3{
 ol{
     padding-bottom: 20px;
 }
-
