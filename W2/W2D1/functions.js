@@ -1,14 +1,16 @@
-/**
- * Function Continued
- */
+//============================FUNCTIONS continued=============
 
 //Things to remeber
 // DRY- Don't Repeat Yourself
 //Good input garbage in garbage out
 
-// 2 ways to write a function
+//Function 
+//A function is a reusable block of code designed to perform a single purpose.
 
-//Function Declaration
+
+//===================2 ways to write a function
+
+//=======Function Declaration
 //function declarations will be hoisted to the top.
 
 
@@ -18,15 +20,16 @@
 
 // sayHello("Toby")
 
-//Function Expression
+
+
+
+//=========Function Expression
 
 // const sayHelloAgain = function (name) {
 //     console.log("Hello " + name + "!")
 // }
 
 // sayHelloAgain("Stan")
-
-//define name
 
 // const sayHelloAgain = function (name) {
 //     console.log(typeof name)
@@ -47,7 +50,17 @@
 // sayHelloAgain(1)
 
 
-//Arrow Functions
+
+//Primary Difference Between Function Declarations & Expressions
+
+// For all practical purposes, the difference between them is that function 
+//expressions cannot be invoked before they are defined; whereas function 
+// declarations are hoisted to the top of their scope and can therefore be invoked 
+// even if they are defined later in the source code. 
+
+
+
+//===============Arrow Functions
 
 // both the same
 // const add = (num1, num2) => num1 + num2
@@ -56,11 +69,15 @@
 //     return num1 + num2
 // }
 
-
 // const add = (num1, num2, num3) => num1 + num2 + num3
 
 // console.log(add(2, 12, 4))
 
+
+//=================
+
+
+//Let's write a function
 
 // function areBothEven(n1, n2) {
 //     return !(n1 % 2) && !(n2 % 2)
@@ -68,6 +85,12 @@
 
 // console.log(areBothEven(2, 6))
 
+// The return keyword returns the result of the expression that follows it
+
+//=============================
+
+
+//Extra notes
 
 //How to make sure is not a string (|| = OR) we got to put OR also areBothEven is a built in function
 // function areBothEven(n1, n2) {
@@ -101,7 +124,7 @@
 // }
 
 
-//Parameters/Arguments
+//=========================Parameters/Arguments
 
 //                     parameters
 // function bottleCapper (bottle, cap) {
@@ -109,12 +132,18 @@
 // }
 //     //console.log(bottle) refrences error
 // bottleCapper("green bottle (argument)", " white cap (argument)")
+//                          arguments
 
+
+
+
+
+//=====================Rest Parameters
 
 // //Spread Operator
+
 // function getDevObject(myName,age, ...skills) {
 //     console.log(skills)
-
 //     return {
 //         devName: myName,
 //         age: age,
@@ -124,6 +153,8 @@
 
 // console.log(getDevObject("Betty", 123, "awesome", "cool"))
 
+
+//=========Quick Objects review
 // //          Objects
 // //Key /value pairs
 // const arr = [1,2,34,3]
@@ -169,7 +200,10 @@
 // console.log(arrOfObj[1].username)
 
 
-//Default Parameters
+
+
+
+//============================Default Parameters
 
 // const bicycleObj = {
 //     brand: "mongoose",
@@ -185,7 +219,15 @@
 // console.log(bicycleObj)
 
 
-// //Functions as arguments 
+
+
+
+//=======================Functions as arguments 
+
+//Often functions or methods (functions attached to an object) will require a function be provided as an argument.
+
+//For example, the forEach method on arrays:
+
 
 // const a = ["red", "green", "green"]
 
@@ -208,16 +250,7 @@
 //slots when we run a function
 
 
-// const a = ["red", "green", "green"]
-
-
-
-// a.forEach(function(color){
-//     const a = color
-//         console.log(a)
-// })
-
-//Scope
+//=====================EXAMPLES OF SCOPE
 
 // const num = 4 //global scope
 
@@ -258,12 +291,15 @@
 //   return bar(b);
 // }
 
-//IFFE
+//====================IIFE Immediately Invoked Function Expression
 // (() => {
 //     console.log("I was ran immediatly")
 // })()
 
-// Block Scope
+
+
+
+//====================Block Scope
 
 // function varTest() {
 //     var x = 10;
@@ -299,6 +335,29 @@
 // console.log(countDown)
 
 //
-function declarations () {
 
-}
+
+//=================Hoisting
+//Remember how we can call function declarations before they are defined thanks to 
+//hoisting
+
+
+//==============Nesting Functions
+
+//Why would we want to do this? Well, Perhaps an outer function needs
+// a "helper" function that would only be relevant only to a given function.
+
+// //function openNewAccount(name, openingBalance) {
+//     let acctNum = generateAcctNum();
+
+//     // createAccount is a function available outside this function
+//     let acct = createAccount(acctNum, openingBalance);
+//     return acct;
+  
+//     // helper function that provides a unique account number
+//     function generateAcctNum() {
+//       return Date.now();  // super amazing algorithm :)
+//     }
+//   }
+
+//Link to more about functions https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions

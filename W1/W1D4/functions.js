@@ -1,4 +1,21 @@
-// Functions
+//======================Functions================
+
+//A block of code enclosed in braces {} Is ised when lines of code are being used 
+//multiple times throughout the program That block is declared as function using the 
+//the right keyword
+
+//If your goal was to add different combinations of two outputs of four variables 
+//x, y, z, w and add 3. one way is to add variables and add 3 every time it’s required.
+
+//function add
+
+// function add(x,y,z,w){
+//     return (x+y+z+w)+3;
+//     }
+    
+// console.log(add(4,5,6,7))
+
+//Making a function for adding 2 numbers
 
 // function addition (x, y) {
 //     let sum = x + y
@@ -6,6 +23,76 @@
 // }
 
 // addition(5, 10)
+
+
+//==============Function Parameters:
+
+// When a function is written, variables used in the definitions are the parameters. 
+//x and y are the parameters in the following example
+// //function (x,y){
+//     console.log(x)
+// }
+
+
+//===============Function Arguments
+// when a function is called, data that is passed to the function is the argument or 
+// arguments if I call the addition function for 6 and 8 like this addition 
+// (6, 8) 6 and 8 are the arguments.
+
+
+//=================Exercise:
+
+//1.
+//Write a function that adds three numbers in
+
+// function addThreeNums (x, y, z) {
+//     return x + y + z
+// }
+
+
+
+//2.
+//Write a function that adds three number and divide the result by 3
+
+// const addAndDivide = (x, y, z) => {
+//   return (x + y + z) / 3;
+// };
+
+// console.log(addAndDivide(3, 6, 9));
+
+
+//=====================================
+
+//=================SCOPE=================
+
+//Scope Global
+
+// Global scope of a variable, or Global variables are the variables declared in the 
+// program so that they can be accessed any time in any function.
+
+//Example Variable named global can be used inside the function
+
+// let global = 10
+
+// function fun() {
+//     let global = 3
+//
+// }
+
+//Scope Local
+
+//Local variables can not be accessed outside of the function they are declared in.
+// Example Variable named local cannot be accessed outside the function
+// function fun() {
+//     let local = 3
+//
+// }
+
+
+//=================================
+
+
+
 
 // Many Arguments
 
@@ -15,24 +102,6 @@
 
 // spreadArgs(1,2,3,4,"cheese", 79)
 
-// Exercise:
-
-// function addThreeNums (x, y, z) {
-//     return x + y + z
-// }
-
-// const sum = addThreeNums(32, 1, 2)
-
-// console.log(sum)
-
-//Exercise ES5
-
-
-// const addAndDivide = (x, y, z) => {
-//   return (x + y + z) / 3;
-// };
-
-// console.log(addAndDivide(3, 6, 9));
 
 // const addSumOfArgs = (...args) => {
 //     let base = 0
@@ -44,34 +113,6 @@
 
 // console.log(addSumOfArgs(2,23,31,32,23))
 
-
-// let tracker = 0
-
-// function printHelloWorld(str) {
-//     console.log(str)
-//     printName('Toby')
-// }
-
-// function printName (name) {
-//     console.log(name)
-//     console.trace("my first trace")
-// }
-
-// const increment = () => {
-//     const avariable = "hello world"
-    
-//     tracker++
-
-
-
-//     printHelloWorld(avariable)
-
-
-// }
-
-
-
-// increment()
 
 
 // //function definition
