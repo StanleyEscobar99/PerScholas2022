@@ -31,10 +31,6 @@
 
 // Think of three properties all people share, set them with the constructor
 // Think of three methods all people share
-// Create a PostalWorker class that inherits from person, add some methods
-// Create a Chef class that inherits from person, add some methods
-// Create 2 PostalWorkers and 2 Chefs, log them and test all their methods
-
 
 // class People {
 //     constructor(name, hairColor, age){
@@ -56,6 +52,9 @@
 
 // }
 
+//===========================
+
+
 // //Create a PostalWorker class that inherits from person, add some methods
 
 
@@ -73,6 +72,10 @@
 //     }
 // }
 
+
+//=============================
+
+
 // //Create a Chef class that inherits from person, add some methods
 
 // class Chef extends People {
@@ -88,6 +91,9 @@
 //         console.log("You got to taste the food before we serve it.")
 //     }
 // }
+
+
+//==========================
 
 
 // // Create 2 PostalWorkers and 2 Chefs, log them and test all their methods
@@ -111,3 +117,81 @@
 // console.log(frank)
 // frank.tasting()
 // frank.cooking()
+
+
+
+
+//===============Bank Accounts take it a step further==========
+
+
+
+// // ============== PART ONE =============
+// class BankAccount{
+//     constructor(ownerParam, balanceParam) {
+//         this.ownerName = ownerParam
+//         this.balance = balanceParam
+//         this.acctNum = Math.floor(Math.random()*10000000)
+//     }
+//     deposit(addMoney){
+//         this.balance += addMoney
+//         return `You have successfully deposited $${addMoney}. Your new balance is $${this.balance}.`
+//     }
+//     withdraw(subtractMoney){
+//         this.balance -= subtractMoney
+//         if (this.balance - subtractMoney < 0){
+//             return `You can not withdraw $${subtractMoney} from your account. INSUFFIECIENT FUNDS!!`
+//         } else{
+//             return `You have successfully withdrawed $${subtractMoney} from your account. Your new balance is $${this.balance - subtractMoney}.`
+//         }
+
+//     }
+// }
+
+// ====== Print to Console ======
+
+// const chase = new BankAccount("Stan", 5000)
+// console.log(chase)
+// console.log(chase.deposit(500))
+// console.log(chase.withdraw(500))
+// console.log(chase.withdraw(50001))
+
+// ================ PART TWO =================
+
+// class CheckingAccount extends BankAccount{
+//     constructor(ownerParam, balanceParam, overdraftEnabledParam = false){
+//         super(ownerParam, balanceParam)
+//         this.overdraftEnabled = overdraftEnabledParam
+//     }
+//     withdraw(subtractMoney){
+//         if (this.overdraftEnabled === true){
+//             this.balance -= subtractMoney
+//                 return `You have successfully withdrawed $${subtractMoney}. Your new balance is $${this.balance}.`
+//         } else {
+//             return "You must enable the overdraft feature."
+//         }
+//     }
+// }
+
+// ====== Print to Console ======
+
+// const chaseChecking = new CheckingAccount("Stan", 200, false) // Test for false
+// const chaseChecking2 = new CheckingAccount("Stan", 200, true) // Test for true
+
+// console.log(chaseChecking)
+// console.log(chaseChecking.withdraw(400)) // Test for false
+// console.log(chaseChecking2.withdraw(400)) // Test for true
+
+// ============= PART THREE =============
+
+// class SavingsAccount extends BankAccount{
+//     withdraw(subtractMoney){
+//         return `You can not withdraw money from your savings account ${this.acctNum}.`
+//     }
+// }
+
+// ====== Print to Console ======
+
+// const chaseSavings = new SavingsAccount("Stann", 1500000)
+
+// console.log(chaseSavings)
+// console.log(chaseSavings.withdraw(6556666))
