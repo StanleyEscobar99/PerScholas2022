@@ -474,6 +474,11 @@
 // // //No because const will still allow you the change the data stored in arrays
 
 
+
+
+
+
+
 // //=================Where is Waldo
 
 
@@ -493,10 +498,58 @@
 
 // console.log(whereIsWaldo[2][1][1])
 
+
+
+
+
+
 // //=================Excited Kitten
 
 // //Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
-// let odd = "Love me, pet me! HSSSSSS!"
-// let even = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// let comment = "Love me, pet me! HSSSSSS!";
+// let kittyTalk = ["...human...why you taking pictures of me?...",
+//                 "...the catnip made me do it...", 
+//                 "...why does the red dot always get away..."];
+
+// let randomNum = 0;
+             
+// for(let meow = 1; meow <= 20; meow++) {
+//     console.log(comment);
+//     if(meow % 2 === 0) {
+//         randomNum = Math.floor(Math.random() * kittyTalk.length);
+//         console.log(kittyTalk[randomNum]);
+//     }
+// }
+
+
+
+
+//==============Find the Median
+
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// let median;
+// let temp;
+
+
+// temp = nums.length / 2;
+// if(temp % 2 !== 0) {
+//     temp = Math.floor(temp);
+// }
+
+// if(nums.length % 2 !== 0){
+//     median = ((nums[temp] + (nums[temp + 1])) / 2);
+// } else {
+//     median = nums[temp];
+// }
+
+// console.log(median);
+
+//Another way
+
+// nums.sort();
+// console.log(nums[Math.floor(nums.length / 2)]);
+
+
+
 
