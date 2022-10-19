@@ -1,131 +1,89 @@
-* {
+:root {
+    --bg: #d6d6e0;
+    --section-bg: #eeeeee;
+    --header-color: #2f526c;
+    --text-color: #9a99b8;
+  }
+  
+  * {
     margin: 0;
     padding: 0;
   }
   
   body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../img/rainbow-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
+    width: 100%;
+    /* root variables (look at the top of the file) */
+    background-color: var(--bg);
     text-align: center;
   }
   
   main {
-    width: 60%;
-    height: 90%;
+    width: 92%;
+    margin: 0 auto;
     background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 2%
   }
   
-  header {
-    height: 20vh;
-    background-color: black;
-    color: white;
+  .title {
+    height: 100px;
+    /* set up to center the child (h1) */
     position: relative;
   }
   
   h1 {
+    margin-top: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
+    /* truly centers a div with a container that is position relative */
+    transform: translate(-50%, -50%); 
+    color: var(--header-color)
   }
   
-  .line {
-    border: 3px solid #336699;
-    background-color: #336699;
+  
+  img {
+    width:70vw;
   }
   
-  nav {
-    height: 5vh;
-    margin-top: 1.5%
+  section {
+    background-color: var(--section-bg);
+    padding: 10px;
+    margin-top: 5px;
   }
   
-  .navLink {
-    font-size: 20px;
-    margin: 25px;
-    text-decoration: none;
-    color: black
+  h2 {
+    color: var(--header-color);
   }
   
-  .wrapper {
-    width: 100%;
-    margin-top: 5%;
-    display: flex;
-  }
-  
-  .image {
-    width:50%;
-   
-  
-  }
-  
-  .image > img {
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-  }
-  
-  .content {
-    width: 50%;
-    height: 400px;
+  nav, ol {
     text-align: left;
+    list-style-position: inside;
+    /* margin-left: 40px */
+    margin: 10px 0 10px 20px;
+    /* margin: top right bottom left */
+  }
+  
+  .article {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
   }
   
   h3 {
-    font-size: 40px;
-    font-weight: lighter;
-    margin-bottom: 4%
+    text-align: center;
+    color: var(--text-color);
   }
   
-  #puppies {
-    font-size: 18px;
-    font-style: italic;
-    margin-bottom: 4%
-  }
-  
-  button {
-    width: 95%;
-    height: 35px;
-    background-color: #33c3f0;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 2%
-  }
-  
-  #reasons {
-    font-weight: bolder;
-    margin-bottom: 5%
+  #footerTitle {
+    margin-top: 3%;
+    color: var(--header-color)
   }
   
   ol {
-    list-style-position: inside;
-  }
-  
-  
-  li {
-    margin-bottom: 3%;
-  }
-  
-  .logo {
-    width: 50px;
-    height: 50px
-  
-  }
-  
-  
-  .findus {
-    margin: 3%
+    padding-bottom: 3%;
   }
