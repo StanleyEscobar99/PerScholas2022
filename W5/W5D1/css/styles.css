@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+/*reusable */
+.hide {
+    display: none;
+}
+
+/* game container */
+#game-container {
+    width: 50vw;
+}
+
+
+#display-container {
+    display: flex;
+    height: 30vh;
+}
+
+#display-container div {
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 200px;
+}
+
+
+form {
+    display: flex;
+}
+
+#submit-button {
+    display: flex;
+    align-self: flex-end;
+}

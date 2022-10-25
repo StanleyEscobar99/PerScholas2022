@@ -178,7 +178,7 @@ if (showingSubMenu) {
 });
 
 
-5.8
+//5.8
 function buildSubMenu(subLinks) {
   subMenuEl.innerHTML = '';
   subLinks.forEach(function (link) {
