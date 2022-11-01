@@ -4,17 +4,16 @@
 //Making our Ship
 
 class UssShip {
-    constructor() {
-        this.hull = 20,
-        this.firepower = 5,
-        this.accuracy = 0.7,
-        this.alive = true
-    }
-    attack() {
+    static hull = 20
+    static firepower = 5
+    static accuracy = 0.7
+    static alive = true
+
+    static attack() {
         let ranNum = Math.random();
-        if (ranNum < this.accuracy) {
+        if (ranNum < UssShip.accuracy) {
             console.log(`We hit them Captain!`);
-            AlienShip.hull -= this.firepower;
+            AlienShip.hull -= UssShip.firepower;
         } else {
             console.log(`You missed the alien ship`);
             console.log("Prepare for there attack")
@@ -23,7 +22,6 @@ class UssShip {
     }
 }
 
-let uss = new UssShip
 
 
 //Making Alien Ship 
@@ -38,7 +36,7 @@ class AlienShip {
         let ranNum = Math.random();
         if (ranNum < this.accuracy) {
             console.log(`It's a hit!`);
-            uss.hull -= this.firepower;
+            UssShip.hull -= this.firepower;
             console.log(`We've been hit`);
         } else {
             console.log(`The alien ship missed!`);
@@ -58,26 +56,38 @@ const alienFleet = [
 ]
 
 
+function retreat() {
+    console.log("Do you wish to keep fighting the Aliens or let them win?")
+}
 
-const battle = function(x, y) {
+
+function game() {
+
+
+}
+const battle = function () {
 
     do {
-        uss.attack()
+
+        console.log("It's our turn to attack!")
+        UssShip.attack()
+        console.log("")
+
         if (alienFleet.hull > 0) {
             AlienShip.attack()
-            if (uss.hull >= 0) {
-                uss.attack()
+            if (UssShip.hull >= 0) {
+                UssShip.attack()
             } else {
                 console.log("You lose!")
             }
         } else {
             ("You win!")
         }
-    } while (alienFleet.hull > 0 && uss.hull > 0)
+    } while (alienFleet.hull > 0 && UssShip.hull > 0)
 }
 
-const fight = function (x, y) {
-    for (let i = 0; i < alienFleet.length; i++){
+const fight = function () {
+    for (let i = 0; i < alienFleet.length; i++) {
         battle(UssShip, alienFleet[i])
     }
 
