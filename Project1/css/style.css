@@ -1,0 +1,130 @@
+@font-face {
+    src: url(/fonts/AbrilFatface-Regular.ttf);
+    font-family: AbrilFatFace;
+  }
+  /* Font I liked */
+  
+  * {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: AbrilFatFace;
+  }
+  /* Remove all padding 
+  Set box sizing to border box 
+  alos made default font to AbrilFatFace */
+  
+  body {
+    width: 100%;
+    background-color: #444444;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Set the width, background color, and height 
+  I set the height to 100vh because This is a single page game so no need
+  to scroll*/
+  /*Also made the display flex and direction column to make everything line up on
+  top of eachother*/
+  
+  
+  .header {
+    width: 100%;
+  }
+  
+  .header h1 {
+    color: #E5E5E5;
+    padding: 1em;
+    text-align: center;
+    font-size: 30px;
+  }
+  /* Here I started to style the the H1 "Codle" first step was making it's width 100%
+  then I gave it a color and moved to the center of the page
+  and also looked for a height that i liked*/
+  
+  .words {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  /* I set grid to width to 100% also the flex grow to 1 meaning that 
+  whatever space is there will allow the grid area to grow with page
+  also set display to center so that grid will always be center no matter what*/
+  
+  
+  .words-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* I was messing around with this is much for like hour but it turned out to be 
+  that I misspelled something */
+  /* First thing I did was set the width to 100% 
+    Next we move to the display where I used FLEX! because the i want the rows to 
+    stack up on eachother also changed the flex direction to column
+    I came back to center items in word container */
+  
+  
+  .grid-row {
+    display: flex;
+    flex-direction: row;
+  }
+  /* I added flex so the squares would display how I would like them */
+  
+  
+  .word {
+    border: 1px solid #a3a7ae;
+    width: 4em;
+    height: 4em;
+    margin-right: 0.4em;
+    margin-bottom: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* I started to build the squares where the words would go into by first building 
+  a border just to see them for and a height and width also I'll work on these more
+  through out the project I also centered letters in squares with diplay flex
+  justify contant and aling items*/
+  
+  .keyboard {
+    width: 100%;
+  }
+  
+  .keys {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .keyboard button {
+    padding-bottom: 1em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 1px solid black;
+    padding: 1em;
+    cursor: pointer;
+    margin-bottom: 0.4em;
+    border-radius: 4px;
+  }
+  
+  
+  .word-green {
+  background-color: #b5e48c;
+  color: rgb(255, 255, 255);
+  }
+  /* correct */
+  .word-yellow {
+  background-color: #ffca3a;
+  color: rgb(0, 0, 0)
+  }
+  /* letter is used not correct location */
+  .word-grey {
+  background-color: #E5E5E5;
+  color: rgb(0, 0, 0)
+  }
+  /* wrong */
